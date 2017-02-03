@@ -15,6 +15,7 @@ char string2[] = "Farm-to-table coloring book tilde brooklyn street art pok pok,
 int length1 = sizeof(string1) - 1;
 int length2 = sizeof(string2) - 1;
 
+// Tests sequential writing of concurrent write requests.
 int main(int argc, char **argv)
 {
     InitTerminalDriver();

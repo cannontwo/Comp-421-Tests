@@ -17,6 +17,7 @@ char string[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellen
 int length = sizeof(string) - 1;
 char *buf;
 
+// Tests interplay of reading and writing, writing to other terminals at the same time.
 int main(int argc, char **argv)
 {
     int i;
@@ -28,8 +29,8 @@ int main(int argc, char **argv)
     InitTerminal(2);
     InitTerminal(3);
 
-    if (argc > 1) HardwareOutputSpeed(1, atoi(argv[1]));
-    if (argc > 2) HardwareInputSpeed(1, atoi(argv[2]));
+    if (argc > 1) HardwareOutputSpeed(0, atoi(argv[1]));
+    if (argc > 2) HardwareInputSpeed(0, atoi(argv[2]));
 
 
     for (i = 1; i < NUM_TERMINALS; i++) {

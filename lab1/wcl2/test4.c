@@ -15,6 +15,7 @@ int length1 = sizeof(string1) - 1;
 char string2[] = "0123456789\n";
 int length2 = sizeof(string2) - 1;
 
+// Tests simultaneous writing
 int
 main(int argc, char **argv)
 {

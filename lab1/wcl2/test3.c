@@ -8,6 +8,7 @@
 
 void writer(void *);
 
+// Tests carriage return handling.
 int main(int argc, char **argv)
 {
     InitTerminalDriver();

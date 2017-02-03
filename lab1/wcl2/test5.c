@@ -12,6 +12,7 @@ void reader1(void *);
 
 char *buf;
 
+// Tests reading.
 int
 main(int argc, char **argv)
 {

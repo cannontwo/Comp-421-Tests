@@ -11,6 +11,7 @@ void writer(void *);
 char string[] = "abcdefghijklmnopqrstuvwxyz";
 int length = sizeof(string) - 1;
 
+// Tests writing.
 int main(int argc, char **argv)
 {
     InitTerminalDriver();

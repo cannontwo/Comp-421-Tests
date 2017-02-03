@@ -16,6 +16,7 @@ char string[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellen
 int length = sizeof(string) - 1;
 char *buf;
 
+// Tests reading and writing simultaneously, writing string longer than internal buffer.
 int main(int argc, char **argv)
 {
     InitTerminalDriver();
@@ -72,5 +73,6 @@ reader(void *arg)
     }
 
     free(buf);
+    return;
 }
 

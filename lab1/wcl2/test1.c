@@ -6,6 +6,7 @@
 
 #include "utils.h"
 
+// Tests initialization.
 int
 main(int argc, char **argv)
 {
