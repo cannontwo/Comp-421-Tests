@@ -12,4 +12,4 @@ As stated on Piazza, it is within the Honor Code to share tests, but **no other 
 
 ## Note for Compilation with wcl2 Tests
 
-If you are using the wcl2 tests for lab1, they have a dependency on **utils.c** and **utils.h** in the same directory. To get these files to compile and link properly with the tests, add `utils.h` after `$(MONTTY)` in the provided Makefile on the line beginning with `ALL` and the line beginning `$(TEST)`. Everything should then compile correctly with make.
+If you are using the wcl2 tests for lab1, they have a dependency on **utils.c** and **utils.h** in the same directory. To get these files to compile and link properly with the tests, add `utils.h utils.c` after `$(MONTTY)` in the provided Makefile on the line beginning with `ALL` and the line beginning `$(TEST)`. Everything should then compile correctly with make.
